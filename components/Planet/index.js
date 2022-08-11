@@ -7,7 +7,7 @@ export default function Planet({ planet, navActive, control, piValue }) {
   const circumference = useMemo(() => 2 * piValue * radius, [piValue])
 
   return (
-    <div id={name} className="orbit">
+    <div id={name} className={`orbit ${navActive == name ? styles.isSelected : ''}`}>
         <div className="pos">
             <div className="planet">
                 {hasRing && (
