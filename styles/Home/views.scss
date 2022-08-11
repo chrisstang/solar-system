@@ -1,0 +1,65 @@
+/* --------------------------------------------------------------------------- planets index */
+
+#mercury { z-index: 10; }
+#venus   { z-index: 9; }
+#earth   { z-index: 8; }
+#moon    { z-index: 7; }
+#mars    { z-index: 6; }
+#jupiter { z-index: 5; }
+#saturn  { z-index: 4; }
+#uranus  { z-index: 3; }
+#neptune { z-index: 2; }
+#sun     { z-index: 1; }
+
+/* --------------------------------------------------------------------------- animations */
+
+@keyframes orbit {
+  0%    { transform: rotateZ(0deg); }
+  100%  { transform: rotateZ(-360deg); }
+}
+
+@keyframes suborbit {
+  0%    { transform: rotateX(90deg) rotateZ(0deg); }
+  100%  { transform: rotateX(90deg) rotateZ(-360deg); }
+}
+
+@keyframes invert {
+  0%   { transform: rotateX(-90deg) rotateY(360deg) rotateZ(0deg); }
+  100% { transform: rotateX(-90deg) rotateY(0deg) rotateZ(0deg); }
+}
+
+/* --------------------------------------------------------------------------- 2D view */
+
+.view-2D #sun    { transform-style: flat; }
+.view-2D .orbit  { transform-style: flat; }
+
+.view-2D #sun, 
+.view-2D .ring              { transform: rotateX(0deg); }
+
+.view-2D .planet, 
+.view-2D .moon              { transform: rotateX(90deg); }
+
+/* --------------------------------------------------------------------------- 3D view */
+
+.view-3D #sun    { transform-style: preserve-3d; }
+.view-3D .orbit  { transform-style: preserve-3d; }
+
+.view-3D #solar-system      { transform: rotateX(75deg) ; }
+.view-3D #sun               { transform: rotateX(-90deg); }
+.view-3D .ring              { transform: rotateX(90deg); }
+
+.view-3D .planet, 
+.view-3D .moon              { transform: rotateX(0deg); }
+
+/* --------------------------------------------------------------------------- large zoom */
+
+#solar-system { width: 100%; }
+
+.view-2D .scale-stretched #solar-system { font-size: 26%; }
+.view-3D .scale-stretched #solar-system { font-size: 62%; }
+
+.view-2D .scale-d #solar-system { font-size: 22%; }
+.view-3D .scale-d #solar-system { font-size: 48%; }
+
+.view-2D .scale-s #solar-system { font-size: 7%; }
+.view-3D .scale-s #solar-system { font-size: 14%; }

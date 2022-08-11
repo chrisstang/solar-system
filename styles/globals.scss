@@ -1,0 +1,58 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300);
+
+// Credit to JulianGarnier
+// https://codepen.io/juliangarnier/pen/krNqZO
+@import './Home/basics.scss';
+@import './Home/views.scss';
+@import './Home/data.scss';
+@import './Home/images.scss';
+@import './Home/lighting.scss';
+@import './Home/ui.scss';
+@import './Home/responsive.scss';
+@import './Home/transitions.scss';
+
+body { 
+  font-size: 10px; 
+  font-family: 'Open Sans', sans-serif; 
+  font-weight: 300; 
+  background-color: #08090A;
+  background-image: url('/img/bg-stars.png');
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+p {
+  font-size: 0.8rem;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.toast {
+  position: fixed;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+  body {
+    color: white;
+    background: black;
+  }
+}
