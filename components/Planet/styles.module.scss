@@ -90,28 +90,6 @@
   }
 }
 
-
-.mercury #mercury.orbit,
-.venus #venus.orbit,
-.earth #earth.orbit,
-.mars #mars.orbit,
-.jupiter #jupiter.orbit,
-.saturn #saturn.orbit,
-.uranus #uranus.orbit,
-.neptune #neptune.orbit {
-  border: 1px solid rgba(255,255,255,.8);
-}
-
 .isSelected {
   border: 1px solid rgba(255,255,255,.8);
-}
-
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
 }

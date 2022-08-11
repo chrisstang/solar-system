@@ -31,30 +31,11 @@
 
 .pos { transition-delay: 1s; }
 
-.opening #solar-system, 
-.opening #sun, 
-.opening .orbit, 
-.opening .pos, 
-.opening .planet, 
-.opening .satelite, 
-.opening .ring,
-.opening .infos,
-.opening h1, 
-.opening #data,
-.opening dl.infos,
-.opening #controls { 
-  transition-duration: 0s;
-  transition-delay: 0s;
-}
-
-.opening .pos { transition-delay: 0s; }
-
-h1, #data, #controls { 
+h1, #controls { 
   transition-property: opacity, margin;
   transition-duration: .8s;
   transition-timing-function: ease-in-out;
 }
 
 h1 { transition-delay: .35s; }
-#data { transition-delay: .7s; }
 #controls { transition-delay: 1s; }
