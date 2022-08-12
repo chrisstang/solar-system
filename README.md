@@ -1,9 +1,11 @@
 # Solar System
 
 ## Brief
-Space project that investigating how could model the solar system. As a first step, calculate the circumference of the sun.
+Space project that investigating how could model the solar system.
 
 Calculating Pi to increasing accuracy e.g. 3, 3.1, 3.14, 3.141, etc.
+
+Store the most recently calculated PI value and display it on the webpage, using the PI value from the server to calculate the circumference of sun and each planet.
 
 ## Getting Started
 ### Steps:
@@ -27,3 +29,7 @@ API route can be accessed on [http://localhost:3000/api/calculate-pi](http://loc
 [^1]: It will return the latest calculated PI value from the server.
 [^2]: If query digits are larger than the value from the server, calculate, save and return the latest calculated PI value from the server.
 [^3]: Post body with {digit: `Number`}, save and return the latest calculated PI value from the server.
+
+## Area of Improvement
+1. Able to select an option to view a true time scaled solar system, based on variable to change the speed of the velocity.
+2. Implement a Redis as a cache layer to return the PI value response faster, so its able to instantly response to the interface even the submitted digits are large.
